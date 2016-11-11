@@ -20,6 +20,6 @@ WORKDIR "/notebooks"
 
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
 
-ADD environment.yml /environment.yml
-RUN conda env create -f /environment.yml
+ONBUILD ADD environment.yml /environment.yml
+ONBUILD RUN conda env create -f /environment.yml
 ENV CONDA_ENV tensorflow
