@@ -22,4 +22,4 @@ CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
 
 ADD environment.yml /environment.yml
 RUN conda env create -f /environment.yml
-
+ENV CONDA_ENV tensorflow

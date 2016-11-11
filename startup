@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # vim: filetype=sh:
 
-source activate tensorflow
+source activate $CONDA_ENV
 "$@"
