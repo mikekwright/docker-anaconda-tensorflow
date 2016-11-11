@@ -1,4 +1,4 @@
-FROM nvidia/cuda:8.0-cudnn5-devel
+FROM ubuntu:16.04
 
 MAINTAINER Michael Wright <mkwright@gmail.com> 
 
