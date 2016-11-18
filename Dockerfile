@@ -22,4 +22,9 @@ CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
 
 ADD environment.yml /environment.yml
 RUN conda env create -f /environment.yml
-ENV CONDA_ENV tensorflow
+ENV CONDA_ENV default
+
+# Install the spacy data (around 1GB of data)
+RUN /startup "python -m spacy.de.download all"
+RUN /startup "python -m spacy.en.download all"
+
