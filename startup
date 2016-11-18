@@ -2,4 +2,8 @@
 # vim: filetype=sh:
 
 source activate $CONDA_ENV
-"$@"
+if [[ "$#" -ne 0 ]]; thenj
+  "$@"
+else
+  /bin/bash
+fi
