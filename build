@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # vim: filetype=sh:
 
-docker build -t mikewright/tensorflow-gpu .
+docker build -t mikewright/datascience-gpu .
