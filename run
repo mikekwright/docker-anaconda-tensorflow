@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # vim: filetype=sh:
 
-docker run --rm  -it -p 9000:8888 --name my-tensor mikewright/tensorflow-gpu
+docker run --rm  -it -p 9000:8888 --name my-tensor mikewright/datascience-gpu
