@@ -23,5 +23,5 @@ ADD environment.yml /environment.yml
 RUN conda env update -f /environment.yml
 
 # Install the spacy data (around 1GB of data)
-RUN /startup "python -m spacy.en.download all"
-RUN /startup "python -m nltk.downloader all"
+RUN python -m spacy.en.download all
+RUN python -m nltk.downloader all
