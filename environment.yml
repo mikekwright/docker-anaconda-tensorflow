@@ -9,4 +9,5 @@ dependencies:
   - pip
   - nltk
   - pip:
-    - https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0-cp35-cp35m-linux_x86_64.whl
+    - tensorflow==0.12.0rc1
+    #- https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0-cp35-cp35m-linux_x86_64.whl
